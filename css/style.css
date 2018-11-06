@@ -1,0 +1,50 @@
+.wrapper {
+    padding: .5rem;
+}
+
+.row {
+    display: flex;
+}
+
+.placeholder {
+    display: flex;
+    width: 100%;
+}
+
+.col {
+    display: flex;
+    padding: .5rem;
+}
+
+.placeholder img {
+    width: 100%;
+    height: auto;
+}
+
+.col--1-2 {
+    width: 50%;
+}
+
+.col--1-3 {
+    width: calc(100%/3 + .5rem);
+}
+
+.col--1-6 {
+    width: calc(100%/6);
+}
+
+.col-2-row {
+    flex-flow: wrap row;
+}
+
+.col-2-row .row:first-child .col {
+    padding: 0 1rem .5rem 0;
+}
+
+.col-2-row .row:last-child .col {
+    padding: .5rem 1rem 0 0;
+}
+
+.col-2-row .row .col:last-child {
+    padding-right: 0;
+}
